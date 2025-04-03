@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ch-Ramya/Portfolio.git"
+  },
+  "author": "Ramya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ch-Ramya/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Ch-Ramya/Portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
