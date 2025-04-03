@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and light mode (accessible)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    
+</head>
+<body>
+    <a href="#mainContentContainer" class="skip-to-content">Skip to Content</a>
+    <nav class="navigation-bar" role="navigation">
+        <div class="logo-container">
+            <span aria-label="Portfolio logo">Portfolio.</span>
+        </div>
+        <ul class="nav-links" role="menu">
+            <li role="menuitem"><a href="#about" aria-label="About Section">About</a></li>
+            <li role="menuitem"><button class="download-cv-btn">Download CV</button></li>
+            <li role="menuitem"><a href="#experience" aria-label="Experience Section">Experience</a></li>
+            <li role="menuitem"><a href="#projects" aria-label="Projects Section">Projects</a></li>
+            <li role="menuitem"><button class="dark-light-toggle-btn" aria-pressed="false" aria-label="ztoggle dark mode"><i class="theme-icon-toggle fa-solid fa-moon"></i></button></li>
+        </ul>
+    </nav>
+    <main id="mainContentContainer">
+        <h1 class="main-heading">Hey, I'm <span class="highlight-text">Ramya Chirukuri</span></h1>
+        <h2 class="secondary-headiing">And I'm a <span class="highlight-text highlight-role-text"> </span></h2>
+        <p>
+            A passionate Frontend Web Developer with 5 years of experience building responsive, accessible, and high-performance web applications. Focused on creating seamless user experiences through modern technologies and best coding practices.
+        </p>
+
+        <div class="social-icons">
+            <a href="#" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Facebook Profile"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter Profile"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="#about" class="know-more-link" aria-label="Know more about me">Know more about me</a>
+    </main>
+    <section id="about" class="about-section">
+        <h2 class="about-title">More about me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    With five years of experience as a frontend developer, I have had the opportunity to work in four different companies, building interactive and accessible web applications. My expertise lies in crafting user-friendly interfaces using modern technologies like HTML, CSS, React, and Angular. I am passionate about designing seamless digital experiences with a strong focus on performance, responsiveness, and accessibility.
+                    
+                </p>
+                <p>
+
+                    Throughout my career, I have collaborated with cross-functional teams to develop scalable solutions that enhance user engagement. My ability to adapt to new frameworks and best practices enables me to deliver high-quality code efficiently. I thrive on solving complex UI challenges and continuously improving my skills to stay ahead in the ever-evolving frontend landscape.
+                </p>
+            </div>
+            <div class="about-skills">
+                <h4 class="skills-title">Skills & Expertise</h4>
+                <div class="skills-grid">
+                    <!-- Dynamically generated skill chips -->
+                </div>
+            </div>
+        </div>
+        <div class="stats-section">
+            <div class="stat">
+                <h2 class="counter" data-target="4">0</h2>
+                <p>Companies Worked For</p>
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="5">0</h2>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="10">0</h2>
+                <p>Applications Developed</p>
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="200000">0</h2>
+                <p>Lines of Code Written</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="experience-section">
+        <h2 class="experience-title">Experience & Contributions</h2>
+        <div class="experience-timeline">
+            <!-- Timeline entries will be injected here dynamically -->
+        </div>
+    </section>
+    <script src="script.js"></script> 
+</body>
+</html>

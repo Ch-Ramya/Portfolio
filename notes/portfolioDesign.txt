@@ -1,0 +1,35 @@
+Header
+    Name
+
+    About
+    Experience
+    Projects
+    Download Resume btn
+
+    Dark/light mode btn
+
+
+Body
+    Section1: 
+        Hello, I am a FrontEnd Developer.
+        SubDesc
+        Social Media links
+
+    About Section :
+        More About me Section
+            Text content
+            Download cv button
+
+        My skill Sect
+            all the skills chips
+
+    Experience
+        Vertical timeline
+
+    Projects
+        Each project in a card
+        Card slider
+
+
+Footer
+    Social links
