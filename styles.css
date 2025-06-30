@@ -676,7 +676,6 @@ body {
   
   .project-content {
     padding: var(--padding-2);
-    padding-top: 0;
   }
   
   .project-content h3 {
