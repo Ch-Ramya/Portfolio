@@ -18,7 +18,7 @@ https://ramyachirukuri-portfolio.vercel.app/
 - [Vercel](https://vercel.com/) for deployment
 
 ## Preview
-<img width="1451" alt="Screenshot 2025-06-30 at 3 03 43 PM" src="https://github.com/user-attachments/assets/047a01bc-cb62-453c-bb25-4cdc954d103c" />
+<img width="1441" alt="Screenshot 2025-06-30 at 3 08 02 PM" src="https://github.com/user-attachments/assets/7353bd8e-ded0-4dab-9a46-f97566fe008e" />
 <img width="1450" alt="Screenshot 2025-06-30 at 3 04 00 PM" src="https://github.com/user-attachments/assets/5eb40687-5680-4d21-a852-9dd2fa0d0dfc" />
 <img width="1451" alt="Screenshot 2025-06-30 at 3 05 09 PM" src="https://github.com/user-attachments/assets/68630c78-ba45-4799-812f-88559cd48158" />
 
