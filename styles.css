@@ -625,7 +625,6 @@ body {
 
 .projects-section {
     padding: var(--padding-3);
-    padding-top: 0;
     color: var(--text-color);
     max-width: 90%;
     margin: 0 auto;
@@ -676,6 +675,7 @@ body {
   
   .project-content {
     padding: var(--padding-2);
+    padding-top: 0;
   }
   
   .project-content h3 {
