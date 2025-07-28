@@ -11,19 +11,27 @@
 <body>
     <a href="#mainContentContainer" class="skip-to-content">Skip to Content</a>
     <nav class="navigation-bar" role="navigation">
-        <div class="logo-container">
-            <a class="logo-link" href="#"><span aria-label="Portfolio logo">Portfolio.</span></a>
-        </div>
-        <ul class="nav-links" role="menu">
-            <li role="menuitem"><a href="#about" aria-label="About Section">About</a></li>
-            <li role="menuitem"><a
-                href="./public/Ramya_resume.pdf"
-                download="Ramya_Chirukuri_Resume.pdf" class="download-cv-btn" aria-label="Download CV">Download CV</a></li>
-            <li role="menuitem"><a href="#experience" aria-label="Experience Section">Experience</a></li>
-            <li role="menuitem"><a href="#projects" aria-label="Projects Section">Projects</a></li>
-            <li role="menuitem"><button class="dark-light-toggle-btn" aria-pressed="false" aria-label="ztoggle dark mode"><i class="theme-icon-toggle fa-solid fa-moon"></i></button></li>
-        </ul>
+      <div class="logo-container">
+        <a class="logo-link" href="#"><span aria-label="Portfolio logo">Portfolio.</span></a>
+      </div>
+    
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    
+      <ul class="nav-links" role="menu">
+        <li role="menuitem"><a href="#about" aria-label="About">About</a></li>
+        <li role="menuitem"><a href="./public/Ramya_resume.pdf" download class="download-cv-btn" aria-label="Download CV">Download CV</a></li>
+        <li role="menuitem"><a href="#experience" aria-label="Experience">Experience</a></li>
+        <li role="menuitem"><a href="#projects" aria-label="Projects">Projects</a></li>
+        <li role="menuitem">
+          <button class="dark-light-toggle-btn" aria-pressed="false" aria-label="Toggle dark mode">
+            <i class="theme-icon-toggle fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
     </nav>
+    
     <main id="mainContentContainer">
         <h1 class="main-heading">Hey, I'm <span class="highlight-text">Ramya Chirukuri</span></h1>
         <h2 class="secondary-headiing">And I'm a <span class="highlight-text highlight-role-text"> </span></h2>

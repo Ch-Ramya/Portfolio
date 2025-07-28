@@ -13,6 +13,9 @@ const aboutSection = document.querySelector("#about");
 const experienceTimelineContainer = document.querySelector(
   ".experience-timeline"
 );
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a, .nav-links button");
 
 const roles = ["Frontend Developer.", "Web Enthusiast.", "UI Engineer."];
 const buttonCtaText = {
@@ -42,10 +45,9 @@ const experienceData = [
     duration: "06/2022 - 01/2024,",
     role: "Frontend Developer - P3",
     details: [
-      "Enhanced the accessibility compliance of the VMware portal to meet industry standards",
-      "Developed and managed VMware Explore pages, providing customers with access to technical content focused on infrastructure modernization, application enhancement, and related technologies",
-      "Contributed to developing Customer Connect pages using Angular, enabling personalized success plans and tracking progress to help customers achieve faster outcomes with VMware technology.",
-      "Resolved bugs and implemented solutions to improve functionality and user experience",
+      "Enhanced user experience and accessibility for the VMware portal, ensuring compliance with industry standards.",
+      "Developed key Customer Connect pages using Angular, contributing to a platform accessed by millions of users monthly, which increased productivity by ~25% and saved ~1,000 person-hours annually.",
+      "Managed VMware Explore pages and resolved bugs, significantly improving functionality and user experience across the portal.",
     ],
   },
   {
@@ -54,10 +56,9 @@ const experienceData = [
     role: "UI Development Engineer",
     duration: "05/2021 - 05/2022",
     details: [
-      "Added localization, which enables the user to run application in multiple languages. This includes auto-detect the user's preferred locale(from browser) or through default language configuration and renders the application, maintain a list of app-related languagespecifc messages, add new languages/ messages, handling unsupported locale etc.",
-      "Enabled GoogleMaps by dispaying various types of map(markers, heatMap, routeMap) in page. Added events like plotting markers, zoom functionality, removing markers, binding mapData with database/ JSON data.",
-      "Enabled Search and filter facility which is helpful when dealing with huge tables through various options like global search, search in a particular column, multi-column filtering.",
-      "Performing code review, bug fixes and identifying functional gaps in end-to-end application development life cycle.",
+      "Implemented localization with auto-detect locale, multi-language support, and dynamic message handling.",
+      "Integrated Google Maps with marker plotting, heatmaps, routing, zoom, and data binding.",
+      "Built advanced search and filter features for large datasets, and contributed to code reviews, bug fixes, and functional gap analysis.",
     ],
   },
   {
@@ -66,10 +67,9 @@ const experienceData = [
     role: "Software Design Engineer",
     duration: "02/2014 - 01/2016,",
     details: [
-      "Standardized pages with a new, responsive, mobile-first approach and strategy using CSS media queries and Bootstrap for responsive design.",
-      "Collaborate with designers and backend developers to create intuitive interfaces.",
-      "Performing code review and identifying functional gaps in end-to-end application development life cycle.",
-      "Extensive Experience in Testing, Debugging and troubleshooting the existing code using chrome Developer Tools",
+      "Built an end-to-end online furniture store enabling users to personalize, visualize, and price complete home furnishings.",
+      "Standardized pages with a responsive, mobile-first design using CSS media queries and Bootstrap; collaborated closely with designers and backend teams.",
+      "Performed thorough code reviews, identified functional gaps, and debugged issues using Chrome DevTools.",
     ],
   },
 ];
@@ -220,6 +220,12 @@ function checkAndStartCounters() {
   }
 }
 
+function toggleMenu() {
+  const expanded = hamburger.getAttribute("aria-expanded") === "true";
+  hamburger.setAttribute("aria-expanded", !expanded);
+  navLinks.classList.toggle("nav-open");
+}
+
 // Attach event listener to check when to start the animation
 window.addEventListener("scroll", checkAndStartCounters);
 
@@ -230,3 +236,14 @@ let currentTheme = getInitialThemePreference(
 updateHTMLTheme(currentTheme);
 updateButtonCTA(currentTheme);
 toggleButton.addEventListener("click", changeThemeEventHandler);
+
+hamburger.addEventListener("click", toggleMenu);
+
+// Close when a nav item is clicked
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (navLinks.classList.contains("nav-open")) {
+      toggleMenu();
+    }
+  });
+});
